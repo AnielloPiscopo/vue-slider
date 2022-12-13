@@ -54,5 +54,15 @@ createApp({
         changeSlide(currentIndex){
             this.activeImageIndex = currentIndex;
         },
+
+        activeInterval(){
+            autoPlay = setInterval((this.increaseIndex),3000)
+        }
     },
+
+
+
+    created(){
+        this.activeInterval()
+    }
 }).mount('#root')
