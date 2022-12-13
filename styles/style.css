@@ -25,8 +25,7 @@ div.carousel-thumbnails-container{
 
 div.carousel-thumbnails{
     background-color: violet;
-    /* display: none; */
-    height: 20%;    
+    height: 25%;    
     cursor: pointer;
 }
 
@@ -66,10 +65,9 @@ div.my_carousel-item {
     /* display:none; */
 }
 
-/* div.my_carousel-item.active ,
-div.carousel-thumbnails.active{
-    display:block;
-} */
+div.carousel-thumbnails img.active{
+    display:none;
+}
 
 div.my_carousel-item img{
     width: 100%;

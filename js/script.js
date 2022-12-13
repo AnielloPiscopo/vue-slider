@@ -55,11 +55,4 @@ createApp({
             this.activeImageIndex = currentIndex;
         },
     },
-
-
-
-    created(){
-        autoPlay :
-            setInterval(this.increaseIndex(this.images.length),3000)
-    }
 }).mount('#root')
