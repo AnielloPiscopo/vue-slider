@@ -49,6 +49,10 @@ createApp({
 
         increaseIndex(arrLength){
             this.activeImageIndex = (this.activeImageIndex >= arrLength-1) ? 0 : this.activeImageIndex+1;
-        }
+        },
+
+        changeSlide(currentIndex){
+            this.activeImageIndex = currentIndex;
+        },
     },
 }).mount('#root')
