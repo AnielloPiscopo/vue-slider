@@ -29,7 +29,7 @@ div.carousel-thumbnails-container{
 
 div.carousel-thumbnails{
     background-color: violet;
-    display: none;
+    /* display: none; */
     height: 25%;    
     cursor: pointer;
 }
@@ -67,13 +67,13 @@ div.next{
 
 div.my_carousel-item {
     height: 100%;
-    display:none;
+    /* display:none; */
 }
 
-div.my_carousel-item.active ,
+/* div.my_carousel-item.active ,
 div.carousel-thumbnails.active{
     display:block;
-}
+} */
 
 div.my_carousel-item img{
     width: 100%;

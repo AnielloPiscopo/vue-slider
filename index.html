@@ -16,47 +16,50 @@
 
     <!-- Custom css -->
     <link rel="stylesheet" href="./styles/style.css">
+
+
+    <!-- Importiamo JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" type="text/javascript" defer></script>
+    <script type="text/javascript" src="./js/script.js " defer></script>
 </head>
 <body>
 
-    <header>
-        <div class="container-fluid">
-            <div class="row text-center p-5">
-                <div class="col-12">
-                    <h1>EightySello!</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <main class="p-5 d-flex">
-        <div class="carousel-wrapper d-flex ">
-            <div class="carousel-image position-relative">
-                <div class="my_carousel-item">
-                    <img src="./img/01.webp" alt="Main carousel image">
-                </div>
-
-                <div class="buttons">
-                    <div class="button previous position-absolute">
-                        <i class="fa-solid fa-egg font-color-white fa-xl"></i>
-                    </div>
-                    <div class="button next position-absolute">
-                        <i class="fa-solid fa-crow font-color-white fa-xl"></i>
+    <div id="root">
+        <header>
+            <div class="container-fluid">
+                <div class="row text-center p-5">
+                    <div class="col-12">
+                        <h1>Vue EightySello!</h1>
                     </div>
                 </div>
             </div>
-            
-            <div class="d-flex flex-column carousel-thumbnails-container">
-                <!-- <div class="carousel-thumbnails">
-                    <img src="./img/01.webp" alt="First image">
+        </header>
+    
+    
+        <main class="p-5 d-flex">
+            <div class="carousel-wrapper d-flex ">
+                <div class="carousel-image position-relative">
+                    <div class="my_carousel-item">
+                        <img :src="images[activeImageIndex].image" alt="Main carousel image">
+                    </div>
+    
+                    <div class="buttons">
+                        <div class="button previous position-absolute">
+                            <i class="fa-solid fa-egg font-color-white fa-xl" @click="decreaseIndex(images.length)"></i>
+                        </div>
+                        <div class="button next position-absolute">
+                            <i class="fa-solid fa-crow font-color-white fa-xl" @click="increaseIndex(images.length)"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="d-flex flex-column carousel-thumbnails-container">
+                    <div class="carousel-thumbnails">
+                        <img src="./img/01.webp" alt="">
+                    </div>
                 </div> -->
             </div>
-        </div>
-    </main>
-
-    <!-- Importiamo JS -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js" type="text/javascript"></script>
-    <script type="text/javascript" src="./js/script.js "></script>
+        </main>
+    </div>
 </body>
 </html>
