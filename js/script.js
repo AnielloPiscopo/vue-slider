@@ -56,12 +56,12 @@ createApp({
         },
 
         activeInterval(){
-            autoPlay = setInterval((this.increaseIndex),3000)
+            autoPlay = setInterval((this.increaseIndex),3000,this.images.length)
         }
     },
 
 
-
+    
     created(){
         this.activeInterval()
     }
