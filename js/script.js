@@ -37,6 +37,8 @@ createApp({
             ],
             
             activeImageIndex : 0,
+            autoPlay : null,
+            intervalPresence : false,
         }
     },
 
@@ -56,7 +58,22 @@ createApp({
         },
 
         activeInterval(){
-            autoPlay = setInterval((this.increaseIndex),3000,this.images.length)
+            if(this.intervalPresence === false){
+                this.autoPlay = setInterval((this.increaseIndex),3000,this.images.length);
+            }
+
+            this.intervalPresence = true;
+            console.log(this.intervalPresence)
+        },
+
+        stopInterval(){
+            if(this.intervalPresence === true){
+                clearInterval(this.autoPlay);
+            }
+
+            this.intervalPresence = false;
+            console.log(this.intervalPresence)
+
         }
     },
 

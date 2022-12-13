@@ -37,7 +37,7 @@
     
     
         <main class="p-5 d-flex">
-            <div class="carousel-wrapper d-flex ">
+            <div class="carousel-wrapper d-flex " title="Se continui a tenere il mouse nel carosello ,l'immagine non cambierà" @pointerenter="stopInterval()" @pointerleave="activeInterval()">
                 <div class="carousel-image position-relative">
                     <div class="my_carousel-item">
                         <img :src="images[activeImageIndex].image" alt="Main carousel image">
