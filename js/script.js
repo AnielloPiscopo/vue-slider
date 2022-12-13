@@ -73,7 +73,6 @@ createApp({
 
             this.intervalPresence = false;
             console.log(this.intervalPresence)
-
         }
     },
 
