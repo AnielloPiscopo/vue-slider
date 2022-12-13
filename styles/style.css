@@ -6,10 +6,6 @@ header h1{
     cursor: pointer;
 }
 
-main{
-    height: 80vh;
-}
-
 div.carousel-wrapper{
     width: 77%;
     height: 680px;
@@ -30,7 +26,7 @@ div.carousel-thumbnails-container{
 div.carousel-thumbnails{
     background-color: violet;
     /* display: none; */
-    height: 25%;    
+    height: 20%;    
     cursor: pointer;
 }
 
