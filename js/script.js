@@ -79,6 +79,8 @@ createApp({
 
     
     created(){
-        this.activeInterval()
+        this.activeInterval(),
+
+        alert('Le immagini del carosello andranno avanti ogni 3s circa automaticamente a meno che tu non tenga il puntatore all\'interno dello slyder');
     }
 }).mount('#root')

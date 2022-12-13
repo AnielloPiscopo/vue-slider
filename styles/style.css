@@ -2,10 +2,6 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
-header h1{
-    cursor: pointer;
-}
-
 div.carousel-wrapper{
     width: 77%;
     height: 680px;

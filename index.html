@@ -37,10 +37,10 @@
     
     
         <main class="p-5 d-flex">
-            <div class="carousel-wrapper d-flex " title="Se continui a tenere il mouse nel carosello ,l'immagine non cambierà" @pointerenter="stopInterval()" @pointerleave="activeInterval()">
+            <div class="carousel-wrapper d-flex " @pointerenter="stopInterval()" @pointerleave="activeInterval()">
                 <div class="carousel-image position-relative">
                     <div class="my_carousel-item">
-                        <img :src="images[activeImageIndex].image" alt="Main carousel image">
+                        <img :src="images[activeImageIndex].image" :alt="images[activeImageIndex].title + ' img'" :title="images[activeImageIndex].title + ' img'">
                         <h3>{{images[activeImageIndex].title}}</h3>
                         <p>{{images[activeImageIndex].text}}</p>
                     </div>
@@ -57,7 +57,7 @@
                 
                 <div class="d-flex flex-column carousel-thumbnails-container">
                     <div class="carousel-thumbnails">
-                        <img :src="image.image" alt="" v-for="(image,index) in images" @click="changeSlide(index)" :class="(index === activeImageIndex) ? 'active' : ' '">
+                        <img :src="image.image" :alt="image.title + ' img'" :title="image.title + ' img'" v-for="(image,index) in images" @click="changeSlide(index)" :class="(index === activeImageIndex) ? 'active' : ' '">
                     </div>
                 </div>
             </div>
