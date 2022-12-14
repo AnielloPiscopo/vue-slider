@@ -56,8 +56,8 @@
                 </div>
                 
                 <div class="d-flex flex-column carousel-thumbnails-container">
-                    <div class="carousel-thumbnails">
-                        <img :src="image.image" :alt="image.title + ' img'" :title="image.title + ' img'" v-for="(image,index) in images" @click="changeSlide(index)" :class="(index === activeImageIndex) ? 'active' : ' '">
+                    <div class="carousel-thumbnails" v-for="(image,index) in images" :class="(index === activeImageIndex) ? 'active' : ' '">
+                        <img :src="image.image" :alt="image.title + ' img'" :title="image.title + ' img'" @click="changeSlide(index)">
                     </div>
                 </div>
             </div>

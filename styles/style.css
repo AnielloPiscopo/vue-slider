@@ -61,7 +61,7 @@ div.my_carousel-item {
     /* display:none; */
 }
 
-div.carousel-thumbnails img.active{
+div.carousel-thumbnails.active{
     display:none;
 }
 
