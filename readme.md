@@ -7,6 +7,7 @@
 <h3>◦ Developed with the software and tools listed below.</h3>
 
 <p align="center">
+<img src="https://img.shields.io/badge/Vue-F7DF1E.svg?style&logo=Vue&logoColor=black" alt="Vue" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style&logo=JavaScript&logoColor=black" alt="JavaScript" />
 <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style&logo=HTML5&logoColor=white" alt="HTML5" />
 </p>
