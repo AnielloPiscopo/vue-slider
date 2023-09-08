@@ -3,10 +3,10 @@
 <img src="https://img.shields.io/badge/Vue.js-4FC08D.svg?style&logo=vuedotjs&logoColor=white" width="100" />
 <br>VUE-SLIDER
 </h1>
-<h3>◦ Simple slider made with HTML,CSS,bootstrap ,JS and Vue.js</h3>
+<h3>◦ Simple page containing a carousel made with HTML,CSS,bootstrap ,JS and Vue.js that represents a re-proposal of an old project(js-array-objects-carousel)</h3>
 <h3>◦ Developed during the course of Full-Stack Web Developer with Boolean</h3>
-<h3>◦ Link: https://aniellopiscopo.github.io/vue-slider/
-</h3>
+<h3>◦ Main Link: https://aniellopiscopo.github.io/vue-slider/</h3>
+<h3>◦ Other Link: https://aniellopiscopo.github.io/js-array-objects-carousel/</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Vue.js-4FC08D.svg?style&logo=vuedotjs&logoColor=white" alt="Vue.js" />
